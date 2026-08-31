@@ -1,9 +1,19 @@
-# Program Cek Bilangan Ganjil atau Genap
+def cek_bilangan():
+    while True:
+        print("===== PROGRAM CEK BILANGAN =====")
 
-while True:
-    bilangan = int(input("Masukkan sebuah bilangan: "))
+        angka = int(input("Masukkan sebuah bilangan: "))
 
-    if bilangan % 2 == 0:
-        print("Bilangan tersebut adalah GENAP")
-    else:
-        print("Bilangan tersebut adalah GANJIL")
+        if angka % 2 == 0:
+            print("Bilangan", angka, "adalah GENAP")
+        else:
+            print("Bilangan", angka, "adalah GANJIL")
+
+        pilihan = input("Apakah ingin mengulang? (y/n): ")
+
+        if pilihan.lower() == "n":
+            print("Program selesai.")
+            break
+
+
+cek_bilangan()
